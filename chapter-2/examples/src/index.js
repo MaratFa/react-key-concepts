@@ -1,18 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-function Advertisement() {
-  return React.createElement(
-    "a",
-    { href: "https://my-website.com" },
-    "Visit my website"
-  );
+function App() {
+  return React.createElement("p", {}, [
+    "Please visit my ",
+    React.createElement("a", { href: "https://my-blog-site.com" }, "Blog"),
+  ]);
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div>
-    <Advertisement />
+    <App />
     <p>Welcome to this book!</p>
   </div>,
   document.getElementById("root")
