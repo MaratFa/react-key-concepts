@@ -1,8 +1,7 @@
-function GoalItem() {
+function GoalItem(props) {
   return (
     <li>
-      <h2>Finish the React tutorial</h2>
-      <p>Learn React and build a simple app!</p>
+      {props.title} (ID: {props.id})
     </li>
   );
 }
