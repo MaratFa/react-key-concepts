@@ -1,7 +1,7 @@
 function GoalItem(props) {
   return (
     <li>
-      {console.log(props)} (ID: {props.id})
+      {props.children} (ID: {props.id})
     </li>
   );
 }
