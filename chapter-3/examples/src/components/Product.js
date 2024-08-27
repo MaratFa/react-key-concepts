@@ -1,9 +1,10 @@
-function Product({ title, price, id }) {
+function Product(props) {
   return (
     <div>
-      <h2>Title: {title}</h2>
-      <p>Price: {price}</p>
-      <p>Product id: {id}</p>
+      <h2>Title: {props.title}</h2>
+      <p>Price: {props.price}</p>
+      <p>Product id: {props.id}</p>
+      <p>{props.children}</p>
     </div>
   );
 }
