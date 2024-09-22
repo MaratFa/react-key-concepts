@@ -1,10 +1,10 @@
-function Product(props) {
+function Product({title, price, id, children}) {
   return (
     <div>
-      <h2>Title: {props.title}</h2>
-      <p>Price: {props.price}</p>
-      <p>Product id: {props.id}</p>
-      <p>{props.children}</p>
+      <h2>Title: {title}</h2>
+      <p>Price: {price}</p>
+      <p>Product id: {id}</p>
+      <p>{children}</p>
     </div>
   );
 }
